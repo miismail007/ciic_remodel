@@ -683,6 +683,7 @@ border: 1px solid black
 .section_one_nw_title p {
     font-family: Roboto;
     font-size: 22px;
+    color: #666666;
     text-transform: capitalize;
 }
 
@@ -691,6 +692,7 @@ border: 1px solid black
     font-family: Poppins;
     letter-spacing: 1px;
     font-size: 43px;
+    color: #666666;
     margin: 10px 0px;
 }
 

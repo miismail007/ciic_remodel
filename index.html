@@ -160,6 +160,7 @@
 
 
 .container {
+  font-family: 'Open Sans',sans-serif;
   margin: 0 auto;
   padding: 20px 0 0;
   max-width: 1100px;
@@ -327,6 +328,24 @@
     float: right;
 }
 </style>
+<style type="text/css">
+  .button_blue{
+    background: #471A72;
+    color: #fff;
+    border: 1px solid #471A72;border-radius: 5px;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 38px;
+    overflow: hidden;
+    padding: 0 28px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+  }
+</style>
       <div class="icon-bar">
 
   
@@ -491,40 +510,27 @@
                <div class="aboutus_split_group">
                   <div class="aboutus_split_group_left">
                      <div class="about_split_top">
-                        <div class="about_split_top1">
+                        <div class="about_split_top1  countcheck">
                            <h4>Applied</h4>
-                           <h6>650+</h6>
+                           <h6 class="count" data-count = 650>0</h6>
                         </div>
-                        <div class="about_split_top1" id="about_center_line">
+                        <div class="about_split_top1  countcheck" id="about_center_line">
                            <h4>Startups</h4>
-                           <h6>150+</h6>
+                           <h6 class="count" data-count = 150>0</h6>
                         </div>
-                        <div class="about_split_top1">
+                        <div class="about_split_top1  countcheck">
                            <h4>Mentors</h4>
-                           <h6>65+</h6>
+                           <h6 class="count" data-count = 65>0</h6>
                         </div>
                      </div>
                      <div class="about_split_bottom">
-                        <div class="about_split_bottom1">
+                        <div class="about_split_bottom1 countcheck">
                            <h4>Awards</h4>
-                           <h6>30</h6>
+                           <h6 class="count" data-count = 30>0</h6>
                         </div>
                         <div class="about_split_bottom1" id="split_bottom_line">
                            <h4>Get Incubated</h4>
-                           <button style="background: #471A72;
-                                        color: #fff;
-                                        border: 1px solid #471A72;border-radius: 5px;
-                                        display: inline-block;
-                                        font-family: 'Lato', sans-serif;
-                                        font-size: 13px;
-                                        font-weight: 700;
-                                        line-height: 38px;
-                                        overflow: hidden;
-                                        padding: 0 28px;
-                                        position: relative;
-                                        text-align: center;
-                                        text-transform: uppercase;
-                                        transition: all 0.3s ease 0s;">Apply now</button>
+                           <a href="#"><button class="button_blue">Apply now</button></a>
                         </div>
                      </div>
                   </div>
@@ -535,7 +541,7 @@
             </div>
          </div>
             <div class="pagecenter">
-               <div style="width: 49%; height: 500px; border-radius: 6px;box-shadow: 0px 0px 10px 5px #d1d1d1; float: left;border:1px solid #d1d1d1;">
+               <div style="width: 49%; height: 500px; border-radius: 6px;box-shadow: 0px 0px 10px 5px #d1d1d1;font-family: 'Montserrat', sans-serif; float: left;border:1px solid #d1d1d1;">
                   <div style="padding:20px 50px; line-height: 40px;">
                      <h3 style="margin: 0;text-align: center;color: #471A72">Vision</h3>
                      <p style="color: #666666">To become a University based Technological Business Incubator of Excellence with national & international allusion parameter in</p>
@@ -546,8 +552,8 @@
                      </ul>
                   </div>
                </div>
-               <div style="width: 49%; height: 500px; border-radius: 6px;box-shadow: 0px 0px 10px 5px #d1d1d1; float: right;border:1px solid #d1d1d1;">
-                  <div style="padding:20px 50px; line-height: 40px;">
+               <div style="width: 49%; height: 500px; border-radius: 6px;box-shadow: 0px 0px 10px 5px #d1d1d1;font-family: 'Montserrat', sans-serif; float: right;border:1px solid #d1d1d1;">
+                  <div style="padding:20px 50px; line-height: 30px;">
                      <h3 style="margin: 0;text-align: center;color: #471A72">Mission</h3>
                      <ul style="padding-left: 20px;color: #666666">
                         <li>Nurture students, faculty, and alumni through entrepreneurial training for recognizing early stage start-ups.</li>
@@ -558,6 +564,29 @@
                   </div>
                </div>
             </div>
+            <div class="section_one_nw">
+            <div class="pagecenter">
+               <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: center;">
+                 <div style="width: 55%;  border-radius: 6px;box-shadow: 0px 0px 10px 5px #d1d1d1;font-family: 'Montserrat', sans-serif; float: left;border:1px solid #d1d1d1;">
+                  <div style="padding:20px 50px; line-height: 40px;">
+                     <h3 style="margin: 0;text-align: center;color: #471A72">Values</h3>
+                     <p style="color: #666666">Nurture our society by nudging the entrepreneurs with</p>
+                     <ul style="padding-left: 20px ;color:#666666">
+                        <li>Integrity</li>
+                        <li>Sustainability</li>
+                        <li>Culture of innovation</li>
+                        <li>Without any barriers.</li>
+                     </ul>
+                     <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: space-around;">
+                       <a href="https://drive.google.com/file/d/1osQkWjMAGvn3aGoLCRIn4T-O8xpl0Kjy/view" target="_blank"><button class="button_blue">Incubation Policy</button></a>
+                                        <a href="https://drive.google.com/file/d/1Sd2v4EIPXF49v8ltJDe8eUuTyhi1c0DE/view" target="_blank"><button class="button_blue">IPR Policy</button></a>
+                                        <a href="#" target="_blank"><button class="button_blue">Faculty Policy</button></a>
+                     </div>
+                  </div>
+               </div>
+               </div>
+            </div>
+         </div>
             <div class="section_one_nw" style="background-color: #edecea;margin-top: 80px">
             <div class="pagecenter">
                <div class="section_one_nw_title" style="color: #353535">
@@ -1049,6 +1078,40 @@ Landline: 044 - 22759200; EXTN: 485 & 486</p>
            slides[slideIndex-1].style.display = "block";  
            dotnws[slideIndex-1].className += " active";
          }
+      </script>
+      <script type="text/javascript">
+        var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('.countcheck').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.count').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 3000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
+});
       </script>
    </body>
 </html>
