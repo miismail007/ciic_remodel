@@ -81,6 +81,206 @@
   font-size: 30px;
 }
 </style>
+<style type="text/css">
+   .footer{
+    padding: 0 100px 0 100px;
+    height: 436px;
+    background-color: #303030;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border-bottom:  1px solid #565555
+  }
+  .footer-div{
+    width: 390px;
+    float: left;
+    color: #e1e1e1;
+    height: 285px;
+  }
+  .footer-div p{
+    line-height: 25px;
+    padding-right: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Lato' , sans-serif;
+  }
+  .footer-social{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+  }
+  .footer-social-icon{
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 100%;
+    float: left;
+    display: flex;
+    margin:0 10px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .events-pics{
+    width: 300px;
+    display: flex;
+    padding-left: 115px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+  }
+  .events-pics a{
+    margin-right: 3px;
+  }
+  .events-pics a:hover{
+    background :rgba(71, 26, 114, 0.71) none repeat scroll 0 0;
+  }
+  .copyright{
+    padding: 0 100px 0 100px;
+    height: 60px;
+    background-color: #303030;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+  }
+  .copyright p{
+    color: #e1e1e1;
+  }
+  .copyright a{
+    color: #e1e1e1;
+  }
+</style>
+<style type="text/css">
+
+
+.container {
+  margin: 0 auto;
+  padding: 20px 0 0;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.panel {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.pricing-table {
+  /*box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);*/
+  box-shadow: 0px 0px 10px 5px #d1d1d1;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .pricing-table {
+    flex-direction: row;
+  }
+}
+
+.pricing-table * {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #e1f1ff;
+  padding: 25px;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 900px) {
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    flex-basis: 100%;
+    padding: 25px 25px;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+
+.pricing-img {
+   width: 100px;
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #471A72;
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  color: #666666;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 50px 0 25px;
+  padding: 0
+}
+
+.pricing-features-item {
+  border-top: 1px solid #d1d1d1;
+  font-size: 12px;
+  list-style: none;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+  color: #016FF9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348EFE;
+  display: inline-block;
+  margin: 25px 0;
+  padding: 15px 35px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+  background-color: #48aaff;
+  color: #fff;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:active {
+  background-color: #269aff;
+}
+</style>
 <style>
 #mySidenavshr a {
     position: absolute;
@@ -186,7 +386,7 @@
          <div class="header">
             <div class="pagecenter123">
                <div class="header_logonw">
-                  <img class="newdesign_logo" src="images/indexlogo23.PNG"></img>
+                  <img class="newdesign_logo" src="images/indexlogo23.PNG"/   >
                </div>
                <div class="header_menunw">
                   <div class="topnavnw" id="myTopnavnw">
@@ -434,6 +634,60 @@
                         </div>
                      </div>
                   </div>
+               </div>
+            </div>
+         </div>
+         <div class="section_one_nw">
+            <div class="pagecenter">
+               <div class="section_one_nw_title" style="color: #353535">
+                  <h3 style="margin: 0">Services</h3>
+               </div>
+               <div class="aboutus_split_group">
+                  <div class="container">
+                   <div class="panel pricing-table">
+                     
+                     <div class="pricing-plan">
+                       <img src="images/service1.png" alt="" class="pricing-img">
+                       <h2 class="pricing-header">Trust Areas</h2>
+                       <ul class="pricing-features">
+                         <li class="pricing-features-item">Life Sciences<br><p style="font-weight: 100">(Agri-Tech, Med -Tech, Healthcare, Nano-Tech, Food-Tech, CleanTech & WASH)</p></li>
+                         <li class="pricing-features-item">Industry 4.0<br><p style="font-weight: 100">(IOT/ AI/ ML, Edu-Tech, Safety & Energy, AR/VR, Cyber Security, Smart Manufacturing)</p></li>
+                         <li class="pricing-features-item">Emerging Areas<br><p style="font-weight: 100">(5G / Fintech /Mobility & Transportation)</p></li>
+                       </ul>
+                       
+                       
+                     </div>
+                     
+                     <div class="pricing-plan">
+                       <img src="images/service2.png" alt="" class="pricing-img">
+                       <h2 class="pricing-header">Facilities</h2>
+                       <ul class="pricing-features">
+                         <li class="pricing-features-item">Office Space/ Lab Space</li>
+                         <li class="pricing-features-item">Marketing Services</li>
+                         <li class="pricing-features-item">Training & Workshops / Seminars</li>
+                         <li class="pricing-features-item">Legal Services / IPR Services</li>
+                         <li class="pricing-features-item">Connect With Investors</li>
+                         <li class="pricing-features-item">Access To Seed Funding</li>
+                         <li class="pricing-features-item">Industry Connect</li>
+                       </ul>
+                       
+                       
+                     </div>
+                     
+                     <div class="pricing-plan">
+                       <img src="images/service3.png" alt="" class="pricing-img">
+                       <h2 class="pricing-header">ENTREPRENEURSHIP COURSES</h2>
+                       <ul class="pricing-features">
+                         <li class="pricing-features-item">Social Entrepreneurship</li>
+                         <li class="pricing-features-item">Life Science Innovation & Entrepreneurship</li>
+                         <li class="pricing-features-item">Leadership & CEO Training</li>
+                       </ul>
+                       
+                       
+                     </div>
+                     
+                   </div>
+                 </div>
                </div>
             </div>
          </div>
@@ -693,6 +947,44 @@
             </div>
          </div>
       </div>
+      <div class="footer">
+  <div class="footer-div">
+    <h3>About us</h3>
+    <p>Crescent Innovation & Incubation Council (CIIC) has been established as a Section-8 not for profit company and will act as a “One Stop Shop – Technology Business Incubator (TBI)” for Start-ups. CIIC facilitates entrepreneurial & innovative ecosystem to all the stakeholders including the students, faculty, industry, investors and society at large.</p>
+    <div class="footer-social">
+        <a href=""><div class="footer-social-icon"><i style="color: #303030; font-size: 12px;" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="footer-social-icon"><i style="color: #303030; font-size: 12px;" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="footer-social-icon"><i style="color: #303030; font-size: 12px;" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="footer-social-icon"><i style="color: #303030; font-size: 12px;" class="fa fa-google-plus"></i></div></a>
+      </div>
+  </div>
+  <div class="footer-div">
+    <h3 style="padding-left: 68px; ">Contact us</h3>
+    <p style="padding-left: 68px; padding-right: 0">Crescent Innovation & Incubation Council (CIIC),<br>
+BS Abdur Rahman Crescent Institute of Science & Technology,<br>
+Seethakathi estate,GST Road,<br>
+Vandalur - 600048<br>
+Email : ceo@ciic.ventures | ceociic@crescent.education<br>
+website: www.ciic.ventures<br>
+Landline: 044 - 22759200; EXTN: 485 & 486</p>
+  </div>
+  <div class="footer-div">
+    <h3 style="padding-left: 115px;">Events & Media</h3>
+    <div class="events-pics">
+      <a href="#"><img src="images/footer1.jpg"></a>
+
+      <a href="#"><img src="images/footer2.jpg"></a>
+      <a href="#"><img src="images/footer3.jpg"></a>
+      <a href="#"><img src="images/footer4.jpg"></a>
+      <a href="#"><img src="images/footer5.jpg"></a>
+      <a href="#"><img src="images/footer6.jpg"></a>
+    </div>
+  </div>
+
+</div>
+<div class="copyright">
+   <p>Copyright <i class="fa fa-copyright"></i> 2019 <a href="http://thestartupbazaar.xyz/" target="_blank">designed by Startup bazaar.</a> All rights reserved. </p>
+</div>
       <script>
          function myFunction() {
            var x = document.getElementById("myTopnavnw");
