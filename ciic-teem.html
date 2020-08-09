@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CIIC - Team</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+  }
+  a{
+    text-decoration: none;
+    color: #191919;
+  }
+  .navbar{
+    height: 80px;
+    width: 100%;
+    padding: 0 100px 0 100px;
+  }
+  .logo{
+    margin-left: 20px;
+    padding-top: 10px;
+    width: 100px;
+    height: 56px;
+  }
+  .nav-right{
+    float: right;
+    height: 100%;
+    padding-right: 13px;
+  }
+  .nav-right ul{
+
+  }
+  .nav-right ul li {
+    float: left;
+    display: inline-block;
+    list-style: none;
+    margin: 12px 16px 16px 19px;
+    font-size: 14px;
+  }
+  .banner{
+    width: 100%;
+    height: 354px;
+    background :rgba(0, 0, 0, 0) url(images/banner.jpg) no-repeat scroll center center / cover;
+    position: relative;
+  }
+  .team-text{
+    color: #fff;
+     display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding: 87px;
+  }
+  .team-text h2{
+    font-size: 36px;
+    font-weight: 400
+  }
+  .team-route{
+    color: #fff;
+    height: 79px;
+    display: flex;
+  flex-wrap: wrap;
+  background :rgba(0, 0, 0, 0.15);
+  align-content: center;
+  justify-content: center;
+  font-style: italic;
+  }
+  .team-route a{
+    font-style: italic;
+  }
+  .section1{
+    background-color: #edecea;
+    padding: 108px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .team-group{
+    padding: 0 100px 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .team{
+    width: 270px;
+    height: 250px;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+  }
+  .team-details{
+    width: 270px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  .team-details h3{
+    margin-top: 60px;
+    text-align: center;
+    font-weight: 800;
+    color:#4d4d4d;
+    margin-bottom: 0px;
+  }
+  .team-details p{
+    color: #4d4d4d;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 600;
+  }
+  .team-details h5{
+  color: #4d4d4d;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 600;
+  }
+  .team-pic{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    align-content: center;
+    justify-content: center;
+  }
+  .team-social{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+  }
+  .social-icon{
+    width: 35px;
+    height: 35px;
+    background-color: #efefef;
+    border-radius: 100%;
+    float: left;
+    display: flex;
+    margin:0 10px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .section2{
+    background-color: #fff;
+    padding: 108px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .team-group2{
+    padding: 0 100px 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .team2{
+    width: 270px;
+    height: 250px;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+  }
+  .team-details2{
+    width: 270px;
+    height: 200px;
+    background-color: #efefef;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  .team-details2 h3{
+    margin-top: 60px;
+    text-align: center;
+    font-weight: 800;
+    color:#4d4d4d;
+    margin-bottom: 0px;
+  }
+  .team-details2 p{
+  color: #4d4d4d;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 600;
+  }
+  .team-details2 h5{
+  color: #4d4d4d;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 600;
+  }
+  .team-pic2{
+    position: absolute;
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #efefef;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .team-social2{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+  }
+  .social-icon2{
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 100%;
+    float: left;
+    display: flex;
+    margin:0 10px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .footer{
+    padding: 0 100px 0 100px;
+    height: 436px;
+    background-color: #303030;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border-bottom:  1px solid #565555
+  }
+  .footer-div{
+    width: 390px;
+    float: left;
+    color: #e1e1e1;
+    height: 285px;
+  }
+  .footer-div p{
+    line-height: 25px;
+    padding-right: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Lato' , sans-serif;
+  }
+  .footer-social{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+  }
+  .footer-social-icon{
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 100%;
+    float: left;
+    display: flex;
+    margin:0 10px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .events-pics{
+    width: 300px;
+    display: flex;
+    padding-left: 115px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+  }
+  .events-pics a{
+    margin-right: 3px;
+  }
+  .events-pics a:hover{
+    background :rgba(71, 26, 114, 0.71) none repeat scroll 0 0;
+  }
+  .copyright{
+    padding: 0 100px 0 100px;
+    height: 60px;
+    background-color: #303030;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+  }
+  .copyright p{
+    color: #e1e1e1;
+  }
+  .copyright a{
+    color: #e1e1e1;
+  }
+
+
+
+
+  @media only screen and (max-width: 400px) {
+  body {
+    width: 100%;
+  }
+}
+</style>
+<body>
+<div class="navbar">
+      <a href="#" ><img src="images/logo (1).png" class="logo" style=""></a>
+      <div class="nav-right">
+        <ul>
+          <li><a href="">ABOUT US</a></li>
+          <li><a href="">TEAM</a></li>
+          <li><a href="">OUR STARTUPS</a></li>
+          <li><a href="">CENTER OF EXCELLENCE</a></li>
+          <li><a href="">BENIFITS</a></li>
+          <li><a href="">EVENTS</a></li>
+          <li><a href="">NAAC</a></li>
+        </ul>
+      </div>
+</div>
+<div class="banner">
+  <div class="team-text">
+    <h2>Team</h2>
+  </div>
+  <div class="team-route">
+    <a href="#" style="color: #fff;">Home</a>&nbsp <span> > </span>&nbspTeam
+  </div>
+</div>
+<div class="section1">
+  <div style="width: 100%;display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    color: #4d4d4d">
+  <h1>Board of Directors</h1>
+  </div>
+  <div class="team-group">
+    <div class="team">
+    <div class="team-pic">
+      <img src="images/member1.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr. Khalid A. K. Buhari</h3>
+      <p>Director</p>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/member2.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr. Arif A. Rahman Buhari</h3>
+      <p>Director</p>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/member3.png" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr. Abdul Qadir A.rahman Buhari</h3>
+      <p>Director</p>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/member4.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr.Syed Mohammed Bukhari</h3>
+      <p>Director</p>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/member5.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Dr. A .Azad</h3>
+      <p>Director</p>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/ceo.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Parvez Alam</h3>
+      <p>Director & CEO</p>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="section2">
+  <div style="width: 100%;
+  display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    color: #4d4d4d">
+  <h1>Board of Advisors</h1>
+  </div>
+  <div class="team-group2">
+    <div class="team2">
+    <div class="team-pic2">
+      <img src="images/advisor1.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details2">
+      <h3>Mr.Ahmed Buhari Rahman</h3>
+      <p>Advisor</p>
+      <div class="team-social2">
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team2">
+    <div class="team-pic2">
+      <img src="images/advisor2.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details2">
+      <h3>Mr.Ashraf Buhari Rahman</h3>
+      <p>Advisor</p>
+      <div class="team-social2">
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team2">
+    <div class="team-pic2">
+      <img src="images/advisor3.png" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details2">
+      <h3>Dr. Taslimarif Saiyed</h3>
+      <p>Advisor</p>
+      <div class="team-social2">
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team2">
+    <div class="team-pic2">
+      <img src="images/advisor4.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details2">
+      <h3>Mr. Chandu Nair</h3>
+      <p>Advisor</p>
+      <div class="team-social2">
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team2">
+    <div class="team-pic2">
+      <img src="images/advisor5.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details2">
+      <h3>Mr.Reji Joseph</h3>
+      <p>Advisor</p>
+      <div class="team-social2">
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team2">
+    <div class="team-pic2">
+      <img src="images/advisor6.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details2">
+      <h3>Mr. Rajan Srikanth</h3>
+      <p>Advisor</p>
+      <div class="team-social2">
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="section1">
+  <div style="width: 100%;display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    color: #4d4d4d">
+  <h1>Mentors</h1>
+  </div>
+  <div class="team-group">
+    <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor1.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Dr.Venil Sumantran</h3>
+      <p>Biotech Expert</p>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor2.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Ms.Meera Nair</h3>
+      <p>Strategy & Business Expert</p>
+      <h5>Agri & Rural Business</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor3.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr.P.Ravichandran</h3>
+      <p>President</p>
+      <h5>Danfoss Industries Pvt Ltd</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor4.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Dr.J.Sadakkadulla</h3>
+      <p>Director General - Administration</p>
+      <h5>United Economic Forum</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor5.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr.Balram Nair</h3>
+      <p>Vice - President</p>
+      <h5>The Chennai Angels</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor6.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr.Rangarajan Ganesan</h3>
+      <p>Advisor - CTap,IIT Madras</p>
+      <h5></h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor7.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Dr.S.Saravana Kumar</h3>
+      <p>General Manager</p>
+      <h5>Dr.Mehta's Hospitals</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor8.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Dr.R.Murugesan</h3>
+      <p>Director - Research</p>
+      <h5>Chettinad Academy</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor9.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr.Balasubramanian N</h3>
+      <p>Skilling - Consultant</p>
+      <h5>Automative Sector</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor10.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Dr.Narasimhan Srinivasan</h3>
+      <p>Chairman</p>
+      <h5>Asthagiri Herbal Research Foundation</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor11.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Dr.Shriram Raghavan</h3>
+      <p>Vice - President</p>
+      <h5>Jananom Pvt Ltd</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor12.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Ms.Akila Rajeshwar</h3>
+      <p>Executive Director</p>
+      <h5>TIE Chennai</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor13.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr.N.Sekar</h3>
+      <p>President</p>
+      <h5 >Aerospace Industry Dev Association , TN</h5>
+      <div class="team-social" style="">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor14.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Dr.Thilai Rajan</h3>
+      <p>Co-Founder</p>
+      <h5>YNOS</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor15.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Dr.Kabaly P Subramaniam</h3>
+      <p>Professor & Business Advisor</p>
+      <h5>Arab Open University, Oman</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor16.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Samrat Ghatak</h3>
+      <p style="">Asst.Vice President - Corp Affairs</p>
+      <h5 style="">Cadilla Pharmaceuticals Limited</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor17.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Sona Pradeep</h3>
+      <p style="">Former Deputy Director</p>
+      <h5>Global Innovation Technology Alliance</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor18.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr.K Allah Pitchai</h3>
+      <p>Technical Support</p>
+      <h5>Qatar Operation At Alterra Gulf.</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor19.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr.Sujit Tharakan</h3>
+      <p style="">CEO @ Aiwel Constructions P Ltd.,</p>
+      <h5 style="margin-top: 0px; margin-bottom: 0px;">Director At DIKW Solutions And Consulting</h5>
+      <div class="team-social" style="margin-top: 0px;">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor20.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr.Ali Akbar</h3>
+      <p >Reg.Sr. Property Dev Manager</p>
+      <h5>Agility Real Estate</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/mentor21.png" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr. Mohamed Arshad.</h3>
+      <p>Managing Director</p>
+      <h5>BHARAT BUILDERS & SAMARS REALTY</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="section2">
+  <div style="width: 100%;
+  display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    color: #4d4d4d">
+  <h1>Mentor External</h1>
+  </div>
+  <div class="team-group2">
+    <div class="team2">
+    <div class="team-pic2">
+      <img src="images/mentorx1.jpg" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details2">
+      <h3>Dr. C. Tharini</h3>
+      <p>Incubation Manager</p>
+      <h5>tharini@crescent.education</h5>
+      <div class="team-social2">
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team2">
+    <div class="team-pic2">
+      <img src="images/executive2.png" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details2">
+      <h3>Dr.Nisha Mukund</h3>
+      <p>Technical Manager</p>
+      <h5>nisha.ciic@crescent.education</h5>
+      <div class="team-social2">
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team2">
+    <div class="team-pic2">
+      <img src="images/executive3.png" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details2">
+      <h3>Mr.M.Dinesh</h3>
+      <p>Scientific Officer</p>
+      <h5>dineshm.ciic@crescent.education</h5>
+      <div class="team-social2">
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team2">
+    <div class="team-pic2">
+      <img src="images/executive4.png" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details2">
+      <h3>Mrs.Yasmin</h3>
+      <p>Accounts Officer</p>
+      <h5>yasmin.ciic@crescent.education</h5>
+      <div class="team-social2">
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team2">
+    <div class="team-pic2">
+      <img src="images/executive5.png" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details2">
+      <h3>Mr.M.Kavin Prabhu</h3>
+      <p>Admin Executive</p>
+      <h5>kavinprabhu.ciic@crescent.education</h5>
+      <div class="team-social2">
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team2">
+    <div class="team-pic2">
+      <img src="images/executive6.png" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details2">
+      <h3>Mr.D.Karthick</h3>
+      <p>Admin Executive</p>
+      <h5>karthick.ciic@crescent.education</h5>
+      <div class="team-social2">
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team2">
+    <div class="team-pic2">
+      <img src="images/executive6.png" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details2">
+      <h3>Mr.D.Karthick</h3>
+      <p>Admin Executive</p>
+      <h5>karthick.ciic@crescent.education</h5>
+      <div class="team-social2">
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon2"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="section1">
+  <div style="width: 100%;
+  display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    color: #4d4d4d">
+  <h1>Executive Team</h1>
+  </div>
+  <div class="team-group">
+    <div class="team">
+    <div class="team-pic">
+      <img src="images/executive1.png" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr. C.N.Prem Kumar</h3>
+      <p>Incubation Manager</p>
+      <h5>premkumar.ciic@crescent.education</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/executive2.png" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Dr.Nisha Mukund</h3>
+      <p>Technical Manager</p>
+      <h5>nisha.ciic@crescent.education</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/executive3.png" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr.M.Dinesh</h3>
+      <p>Scientific Officer</p>
+      <h5>dineshm.ciic@crescent.education</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/executive4.png" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mrs.Yasmin</h3>
+      <p>Accounts Officer</p>
+      <h5>yasmin.ciic@crescent.education</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/executive5.png" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr.M.Kavin Prabhu</h3>
+      <p>Admin Executive</p>
+      <h5>kavinprabhu.ciic@crescent.education</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  <div class="team">
+    <div class="team-pic">
+      <img src="images/executive6.png" style="width: 90px;height: 90px;border-radius: 100%;">
+    </div>
+    <div class="team-details">
+      <h3>Mr.D.Karthick</h3>
+      <p>Admin Executive</p>
+      <h5>karthick.ciic@crescent.education</h5>
+      <div class="team-social">
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="social-icon"><i style="color: blue" class="fa fa-google-plus"></i></div></a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer-div">
+    <h3>About us</h3>
+    <p>Crescent Innovation & Incubation Council (CIIC) has been established as a Section-8 not for profit company and will act as a “One Stop Shop – Technology Business Incubator (TBI)” for Start-ups. CIIC facilitates entrepreneurial & innovative ecosystem to all the stakeholders including the students, faculty, industry, investors and society at large.</p>
+    <div class="footer-social">
+        <a href=""><div class="footer-social-icon"><i style="color: #303030; font-size: 12px;" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="footer-social-icon"><i style="color: #303030; font-size: 12px;" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="footer-social-icon"><i style="color: #303030; font-size: 12px;" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="footer-social-icon"><i style="color: #303030; font-size: 12px;" class="fa fa-google-plus"></i></div></a>
+      </div>
+  </div>
+  <div class="footer-div">
+    <h3 style="padding-left: 68px; ">Contact us</h3>
+    <p style="padding-left: 68px; padding-right: 0">Crescent Innovation & Incubation Council (CIIC),<br>
+BS Abdur Rahman Crescent Institute of Science & Technology,<br>
+Seethakathi estate,GST Road,<br>
+Vandalur - 600048<br>
+Email : ceo@ciic.ventures | ceociic@crescent.education<br>
+website: www.ciic.ventures<br>
+Landline: 044 - 22759200; EXTN: 485 & 486</p>
+  </div>
+  <div class="footer-div">
+    <h3 style="padding-left: 115px;">Events & Media</h3>
+    <div class="events-pics">
+      <a href="#"><img src="images/footer1.jpg"></a>
+
+      <a href="#"><img src="images/footer2.jpg"></a>
+      <a href="#"><img src="images/footer3.jpg"></a>
+      <a href="#"><img src="images/footer4.jpg"></a>
+      <a href="#"><img src="images/footer5.jpg"></a>
+      <a href="#"><img src="images/footer6.jpg"></a>
+    </div>
+  </div>
+
+</div>
+<div class="copyright">
+   <p>Copyright <i class="fa fa-copyright"></i> 2019 <a href="http://thestartupbazaar.xyz/" target="_blank">designed by Startup bazaar.</a> All rights reserved. </p>
+</div>
+</body>
+</html>
