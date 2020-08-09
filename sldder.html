@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* Slideshow container */
+.slideshow-containernw {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlidesnw {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & prevnwious buttons */
+.prevnw, .nextnw {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "nextnw button" to the right */
+.nextnw {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevnw:hover, .nextnw:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dotnw/bullet/indicator container */
+.dotnw-container {
+    text-align: center;display:none;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dotnws/bullets/indicators */
+.dotnw {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dotnw/circle */
+.dotnw.active, .dotnw:hover {
+  background-color: #717171;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="slideshow-containernw">
+
+<div class="mySlidesnw">
+  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+ 
+</div>
+
+<div class="mySlidesnw">
+  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+  
+</div>
+
+<div class="mySlidesnw">
+  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+ 
+</div>
+
+<a class="prevnw" onclick="plusSlides(-1)">❮</a>
+<a class="nextnw" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dotnw-container">
+  <span class="dotnw" onclick="currentSlide(1)"></span> 
+  <span class="dotnw" onclick="currentSlide(2)"></span> 
+  <span class="dotnw" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidesnw");
+  var dotnws = document.getElementsByClassName("dotnw");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dotnws.length; i++) {
+      dotnws[i].className = dotnws[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dotnws[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
