@@ -4,6 +4,7 @@
   <title>CIIC - Team</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -335,6 +336,36 @@
 }
 </style>
 <body>
+        <style type="text/css">
+        .scroll-to-top{
+          width: 45px;
+    height: 45px;
+    background: #d1d1d1;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    text-align: center;
+    transition: all .4s ease;
+        }
+        .scroll-to-top i {
+    font-size: 18px;
+    line-height: 45px;
+    color: #000;
+}
+      </style>
+      <script type="text/javascript">
+        $(document).ready(function() {
+
+    $('#scroll-top').click(function(){
+        $('html, body').animate({scrollTop:0}, 'slow');
+        return false;
+    });
+
+});
+      </script>
+      <a href="#" id="scroll-top" data-target="html" class="scroll-to-target scroll-to-top" style="display: block;"><i class="fa fa-angle-up"></i></a>
   <div class="header">
             <div class="pagecenter123">
                <div class="header_logonw">
